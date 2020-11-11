@@ -7,7 +7,7 @@ char* word, * ptr;
 char line[1024];
 FILE* file;
 int i = 0, j =0, k =0;
-int nw = 1, plw = 0, flag = 0, s = 1, si = 0;
+int nw = 1, lw = 0, plw = 0, flag = 0, s = 1, si = 0;
 void write() {
 	dictionary = (char**)realloc(dictionary, nw * sizeof(char*));
 	dictionary[nw - 1] = (char*)calloc(plw+1, sizeof(char));
