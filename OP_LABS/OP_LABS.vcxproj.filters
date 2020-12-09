@@ -13,14 +13,47 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Lab10_9">
+      <UniqueIdentifier>{709795ff-635f-48e2-a843-cd13441e6023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Lab10NM">
+      <UniqueIdentifier>{12ef39b2-c685-447b-9eff-076fed4f8ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Lab11">
+      <UniqueIdentifier>{b65c05ea-b4be-4382-ae94-6537d1a594ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LAB10_9.c">
+      <Filter>Исходные файлы\Lab10_9</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.c">
+      <Filter>Исходные файлы\Lab10NM</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab11_9.cpp">
+      <Filter>Исходные файлы\Lab11</Filter>
+    </ClCompile>
+    <ClCompile Include="Code.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="help.txt">
+      <Filter>Исходные файлы\Lab10_9</Filter>
+    </Text>
+    <Text Include="test.txt">
+      <Filter>Исходные файлы\Lab10NM</Filter>
+    </Text>
+    <Text Include="result.txt">
+      <Filter>Исходные файлы\Lab10NM</Filter>
+    </Text>
+    <Text Include="Code.txt">
+      <Filter>Исходные файлы\Lab11</Filter>
+    </Text>
+    <Text Include="file1.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="file2.txt">
       <Filter>Исходные файлы</Filter>
     </Text>
   </ItemGroup>

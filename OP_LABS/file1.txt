@@ -1,0 +1,13 @@
+/*#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+	extern char c, b, hello;
+	extern int a, sum;
+	doble inner, vsion
+	FILE* file;
+	fopen_s(&file, "print1.txt", "wt");
+	while ((c = getchar()) != EOF)
+		fputc(c, file);
+fclose(file);
+}*/

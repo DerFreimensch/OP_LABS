@@ -140,10 +140,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Code.c" />
     <ClCompile Include="LAB10_9.c" />
+    <ClCompile Include="Lab11_9.cpp" />
+    <ClCompile Include="Source.c" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Code.txt" />
+    <Text Include="file1.txt" />
+    <Text Include="file2.txt" />
     <Text Include="help.txt" />
+    <Text Include="result.txt" />
+    <Text Include="test.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

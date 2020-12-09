@@ -1,4 +1,4 @@
-#define CRT_SECURE_NO_WARNINGS
+/*#define CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <malloc.h>
 #include <string.h>
@@ -52,7 +52,6 @@ void sort() {
 				s = 1;
 			}
 		}
-		
 		swop[si] = (char*)calloc(dictionary[flag], sizeof(char));
 		strcpy(swop[si], dictionary[flag]);
 		free(dictionary[flag]);
@@ -101,6 +100,5 @@ int main(void) {
 		free(swop[i]);
 	}
 	free(swop);
-	
 	return 0;
-}
+}*/

@@ -1,0 +1,15 @@
+/*#include <stdio.h>
+#include <stdlib.h>
+char hell, dom;
+extern int goal, sim;
+extern doble inner, vsion
+void main()
+
+{
+
+	FILE* file;
+	fopen_s(&file, "print1.txt", "wt");
+	while ((c = getchar()) != EOF)
+		fputc(c, file);
+fclose(file);
+}*/
