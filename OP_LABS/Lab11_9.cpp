@@ -1,50 +1,64 @@
 // TODO: Вывести на экран содержимое файла с программой на языке С, выделяя в
 //строке все идентификаторы массивов
 
-/*#include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 #include <windows.h>
+#include <malloc.h>
 #define MAXLINE 1024
 
 int main(void) {
-	char line[MAXLINE], word[100][MAXLINE], *ptr;
-	int flag = 0, i = 0, k =0;
+	char line[MAXLINE], * ptr;
+	int i = 0, k = 0, lenghWord = 0, startflag = 0, flag =0;
 	HANDLE hStdout;
 	FILE* file;
-	WORD foregroundColor0;
-	WORD backgroundColor;
-	WORD textAttribute;
-	foregroundColor0 = FOREGROUND_INTENSITY |
-		FOREGROUND_RED;
-	backgroundColor = BACKGROUND_INTENSITY |
-		BACKGROUND_BLUE |
-		BACKGROUND_GREEN |
-		BACKGROUND_RED;
-	SetConsoleTextAttribute(hStdout,
-		foregroundColor0 | backgroundColor);
+	hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
 	file = fopen("code.txt", "r+t");
 	if (file == NULL)
 		return 10;
 	while (!feof(file))
 	{
-		ptr = fgets(line, MAXLINE, file);
-		if (ptr == NULL)
+
+
+
+		if (fgets(line, MAXLINE, file) == NULL)
 			break;
-		if (*ptr == '\0' || *ptr == '\n') {
-			break;
-		}
-		else if (flag == 0 && (*ptr != ' ' || *ptr == '(')) {
-			flag = 1;
-			while (flag == 1) {
-				if (*(ptr + i) == '[') {
-					for (int l = 0; l < i; l++) {
-						word[k][l] = *(ptr + l);
+		else {
+			
+			i = 0;
+			flag = 0;
+			startflag = 0;
+			while (i < MAXLINE) {
+				if (line[i] == ' ' || line[i] == '.' || line[i] == ',' || line[i] == ' \n' || line[i] == '\0' || line[i] == ']' || line[i] == '[' || line[i] == '!' || line[i] == '(' || line[i] == ')' || line[i] == '&') {
+					if (flag) {
+						flag = 0;
+						if (line[i] == '[') {
+							SetConsoleTextAttribute(hStdout, (WORD)((0 << 4) | 4));
+							while (startflag < i) {
+								printf("%c", line[startflag++]);
+							}
+							SetConsoleTextAttribute(hStdout, (WORD)((0 << 4) | 2));
+						}
+						else {
+							while (startflag < i) {
+								printf("%c", line[startflag++]);
+							}
+						}
 					}
+					printf("%c", line[i]);
 				}
-				if (*(ptr + i) == ' ') {
-					flag = 0;
+				else {
+					if (!flag)
+					{
+						startflag = i;
+						flag = 1;
+					}
+
 				}
 				i++;
+				if (line[i - 1] == '\0')
+					break;
 			}
 		}
-}*/
+	}
+}

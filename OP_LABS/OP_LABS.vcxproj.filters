@@ -22,6 +22,12 @@
     <Filter Include="Исходные файлы\Lab11">
       <UniqueIdentifier>{b65c05ea-b4be-4382-ae94-6537d1a594ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Lab10-NM">
+      <UniqueIdentifier>{76d3f0ad-1af9-439f-b71e-1a928933fc64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\LabNM">
+      <UniqueIdentifier>{1618f9a0-87b2-4ac0-b6f6-23e1b3f3d828}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LAB10_9.c">
@@ -34,7 +40,10 @@
       <Filter>Исходные файлы\Lab11</Filter>
     </ClCompile>
     <ClCompile Include="Code.c">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Lab10-NM</Filter>
+    </ClCompile>
+    <ClCompile Include="LabNM.cpp">
+      <Filter>Исходные файлы\LabNM</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,10 +60,16 @@
       <Filter>Исходные файлы\Lab11</Filter>
     </Text>
     <Text Include="file1.txt">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Lab10-NM</Filter>
     </Text>
     <Text Include="file2.txt">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Lab10-NM</Filter>
+    </Text>
+    <Text Include="End.txt">
+      <Filter>Исходные файлы\LabNM</Filter>
+    </Text>
+    <Text Include="start.txt">
+      <Filter>Исходные файлы\LabNM</Filter>
     </Text>
   </ItemGroup>
 </Project>

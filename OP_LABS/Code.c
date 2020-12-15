@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 #include <malloc.h>
 char** masInt, ** masChar, ** masDouble, * ptr, key[6] = {'e','x','t','e','r','n'}, line[1024];
@@ -154,4 +154,4 @@ int main(int argc, char* argv[]) {
 		j = 0;
 		printf("\n");
 	}
-}
+}*/
